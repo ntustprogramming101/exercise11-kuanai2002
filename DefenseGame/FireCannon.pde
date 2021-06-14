@@ -2,6 +2,10 @@ class FireCannon extends Cannon {
   
   Explosion explosion;
   float explosionTime = 0.5;
+class FireCannon extends Cannon {
+  
+  Explosion explosion;
+  float explosionTime = 0.5;
   float explosionRadius = 64;
   
   FireCannon(float x, float y, float targetAngle){
@@ -41,4 +45,5 @@ class FireCannon extends Cannon {
         && soldier.isAlive
         && dist(x, y, soldier.x, soldier.y) <= explosionRadius + soldier.getRadius();
   }
+}
 }
